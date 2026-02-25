@@ -60,8 +60,8 @@ Make sure that the `pico-sdk` submodule is initialized:
 ```sh
 git submodule update --init --recursive
 ```
-### Support for Pico 2
-These instructions can also support the Pico 2 and Pico 2 W, which use the RP2350. Ensure that the environment variables are set correctly (e.g., `export PICO_BOARD=pico2_w; export PICO_PLATFORM=rp2350` to accomodate the Pico 2 W).
+### Support for RP2350-based boards
+These instructions can also support boards based on the RP2350, such as the Pico 2 and Pico 2 W. Ensure that the relevant environment variables are set correctly (e.g., `export PICO_BOARD=pico2_w` to accomodate the Pico 2 W).
 
 ## Building
 
