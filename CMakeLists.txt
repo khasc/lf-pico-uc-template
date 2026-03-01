@@ -4,11 +4,15 @@ project(reactor-uc-pico)
 set(PLATFORM "PICO" CACHE STRING "Platform to target")
 
 if (NOT DEFINED LF_MAIN)
-  set(LF_MAIN "Blink")
+  set(LF_MAIN "BlinkStatus")
 endif()
 
 if (NOT DEFINED LOG_LEVEL)
   set(LOG_LEVEL "LF_LOG_LEVEL_WARN")
+endif()
+
+if (PICO_SDK_VERSION_STRING VERSION_LESS "2.2.0")
+  message(FATAL_ERROR "Raspberry Pi Pico SDK version 2.2.0 (or later) required. Your version is ${PICO_SDK_VERSION_STRING}")
 endif()
 
 pico_sdk_init()
