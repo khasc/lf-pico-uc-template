@@ -90,7 +90,7 @@ If CMake detects any changes to any files found in `src/*.lf` the configure step
 
 ## Flashing
 
-Before flashing the binary to your rp2040 based board, the board must be placed into ``BOOTSEL`` mode. On a [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) this can be entered by holding the ``RESET`` button while connecting the board to the host device. Run ``picotool help`` for more information on its
+Before flashing the binary to the board, it must be placed into ``BOOTSEL`` mode. On a [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) this can be entered by holding the ``RESET`` button while connecting the board to the host device. Run ``picotool help`` for more information on its
 capabilities.
 
 Run the following to flash an application binary on to your board.
